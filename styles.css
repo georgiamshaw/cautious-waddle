@@ -4,6 +4,13 @@ body {
   justify-content: center;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   padding: 0;
 }
@@ -22,4 +29,27 @@ p {
 
 h1 {
   text-align: center;
+}
+
+.addTodo {
+  display: flex;
+  gap: 1rem;
+}
+
+input {
+  border-radius: 10px;
+  box-shadow: 0;
+  border: 1px solid;
+  padding-left: 0.5rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
