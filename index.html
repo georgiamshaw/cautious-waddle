@@ -4,58 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="src/vanilla/styles.css" />
     <title>To do list</title>
   </head>
   <body>
     <section>
       <h1>To do list</h1>
-      <ul class="todoList">
-        <li>
-          <p>Task 1</p>
+      <ul class="todoList"></ul>
+      <p class="noTodos">Write a todo</p>
+      <template id="templateTodo">
+        <li class="todoItem">
+          <p></p>
           <div class="buttonContainer">
             <button>
               Edit
               <img src="./public/edit.svg" />
             </button>
-            <button>
+            <button class="removeTodoButton">
               Remove
-              <img src="./public/delete.svg" />
+              <img class="removeTodoIcon" src="./public/delete.svg" />
             </button>
           </div>
         </li>
-        <li>
-          <p>Task 2</p>
-          <div class="buttonContainer">
-            <button>
-              Edit
-              <img src="./public/edit.svg" />
-            </button>
-            <button>
-              Remove
-              <img src="./public/delete.svg" />
-            </button>
-          </div>
-        </li>
-        <li>
-          <p>Task 3</p>
-          <div class="buttonContainer">
-            <button>
-              Edit
-              <img src="./public/edit.svg" />
-            </button>
-            <button>
-              Remove
-              <img src="./public/delete.svg" />
-            </button>
-          </div>
-        </li>
-      </ul>
-      <div class="addTodo">
+      </template>
+      <form class="addTodoForm">
         <input class="addTodoInput" type="text" />
         <button class="addTodoButton">Add</button>
-      </div>
+      </form>
     </section>
-    <script type="module" src="/script.js"></script>
+    <script type="module" src="src/vanilla/script.js"></script>
   </body>
 </html>
