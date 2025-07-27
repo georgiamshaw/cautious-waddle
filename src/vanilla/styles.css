@@ -31,7 +31,7 @@ h1 {
   text-align: center;
 }
 
-.addTodo {
+.addTodoForm {
   display: flex;
   gap: 1rem;
 }
@@ -52,4 +52,12 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.noTodos {
+  display: none;
+}
+
+ul:empty ~ .noTodos {
+  display: block;
 }
